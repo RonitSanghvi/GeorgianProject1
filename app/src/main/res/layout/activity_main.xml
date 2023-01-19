@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+>
+    <!--
+        'android' and 'tools' are called using 'xmlns' to use it in the tag.
+        width and height are required. Must define or error will occur. Rest are optional.
+        'match_parent' will take 100% of the parent component.
+        vertical orientation will bring all tags below one another.
+        If we choose horizontal, every tag inside this tag will appear next to one another.
+    -->
+
+    <Spinner
+        android:id="@+id/game_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/game_genres"
+        />
+    <!--
+        'id' is defined add functions to the button using kotlin.
+        '@+id/' is required to use before giving a value.
+        'gravity' means horizontal alignment
+        'wrap_content' takes the space as required.
+        use '@array' instead of '@string' when you used array in 'string resources'
+    -->
+
+    <Button
+        android:id="@+id/find_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/find_game"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/video_games" />
+
+
+</LinearLayout>
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="MDEV 1008 - RONIT SANGHVI"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

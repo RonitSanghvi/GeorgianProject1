@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Game App</string>
+    <string name="find_game">Find Game</string>
+    <string name="video_games">Video Games Advisor</string>
+    <string-array name="game_genres">
+        <item>Cars</item>
+        <item>Sports</item>
+        <item>Gun Fights</item>
+        <item>Action</item>
+    </string-array>
+</resources>
