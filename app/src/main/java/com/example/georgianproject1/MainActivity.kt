@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             // Initially, 'str' would be empty.
             val games = gameList.reduce { str, item -> str + '\n' + item }
 
-            // Getting the text view
+            // Getting the text view...
              val textShowing = findViewById<TextView>(R.id.games)
 
             // Printing the games in the textview.
